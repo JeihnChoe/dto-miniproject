@@ -12,7 +12,7 @@ import com.example.kakao.product.option.Option;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-@Table(name="product_tb")
+@Table(name = "product_tb")
 public class Product {
 
     @Id
@@ -30,11 +30,12 @@ public class Product {
     private List<Option> options = new ArrayList<>();
 
     @Builder
-    public Product(int id, String productName, String description, String image, int price) {
-        this.id = id;
-        this.productName = productName;
-        this.description = description;
-        this.image = image;
-        this.price = price;
+    public Product(Product product) {
+        this.id = product.getId();
+        this.productName = product.getProductName();
+        this.description = product.getDescription();
+        this.image = product.getImage();
+        this.price = product.getPrice();
+        this.options = product.getOptions();
     }
 }

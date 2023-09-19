@@ -1,22 +1,18 @@
 package com.example.kakao.product;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import lombok.RequiredArgsConstructor;
+public class ProductServiceTest {
 
-@RequiredArgsConstructor
-@Transactional(readOnly = true)
-@Service
-public class ProductService {
 
-    private final ProductJPARepository productJPARepository;
+    ProductJPARepository productJPARepository;
 
     // (기능1) 상품 목록보기
+    @Test
     public List<ProductResponse.FindAllDTO> findAll(int page) {
 
         List<Product> productList = productJPARepository.findAll();
