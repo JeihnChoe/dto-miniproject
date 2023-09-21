@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Transactional(readOnly = true)
@@ -17,10 +18,18 @@ public class CartService {
 
     private final CartJPARepository cartJPARepository;
     private final OptionJPARepository optionJPARepository;
+    private final HttpSession session;
+
+    User sessionUser = (User)session.getAttribute("sessionUser");
+
 
     // (기능3) 장바구니 조회
     public CartResponse.FindAllByUserDTO findAllByUser(User sessionUser) {
-        return null;
+
+        List<Cart> cartPS = cartJPARepository.findAllByUserId(sessionUser.getId());
+
+
+        return new CartResponse.FindAllByUserDTO(cartPS);
     }
 
     @Transactional

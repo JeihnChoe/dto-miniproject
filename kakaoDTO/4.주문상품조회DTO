@@ -1,0 +1,23 @@
+{
+    "totalPrice":60000,
+    "carts": [
+      {
+         "cartId":1,
+         "name":"기본에 슬라이딩 - 01.슬라이딩 지퍼백",
+         "cartQuantity": 2,
+         "cartPrice":20000
+      },
+      {
+           "cartId":1,
+           "name":"기본에 슬라이딩 - 01.슬라이딩 지퍼백",
+           "cartQuantity": 2,
+           "cartPrice":20000
+        },
+        {
+             "cartId":1,
+             "name":"기본에 슬라이딩 - 01.슬라이딩 지퍼백",
+             "cartQuantity": 2,
+             "cartPrice":20000
+         },
+    ]
+}

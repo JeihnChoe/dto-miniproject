@@ -1,0 +1,33 @@
+[
+  {
+    "productId":1,
+    "productName":"크리스마스 특별기획전",
+    "carts":[
+      {
+        "cartId":1,
+        "option":{"optionId":1, "optionName:"4종", "optionPrice":10000},
+        "cartQuantity":5,
+        "cartPrice":50000
+       },
+        {
+          "cartId":2,
+          "option":{"optionId":1, "optionName:"4종", "optionPrice":10000},
+          "cartQuantity":5,
+          "cartPrice":50000
+        }
+     ]
+   },
+ {
+     "productId":2,
+     "productName":"크리스마스 특별기획전",
+     "carts":[
+       {
+         "cartId":3,
+         "option":{"optionId":1, "optionName:"4종", "optionPrice":10000},
+         "cartQuantity":5,
+         "cartPrice":50000
+        }
+      ]
+    },
+
+]

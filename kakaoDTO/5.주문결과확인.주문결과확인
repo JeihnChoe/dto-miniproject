@@ -1,0 +1,29 @@
+{ "orderId":1,
+  "totalPrice":52800,
+  "products": [{
+            "productName":"햇밤",  
+            "items":[{
+                    "itemId":1,
+                    "optionName":"밤깎기",
+                    "itemQuantity":2,
+                    "itemPrice":11000
+                     }]
+                },
+                {
+            "productName":"기본에슬라이딩",  
+            "items":[{
+                    "itemId":2,
+                    "optionName":"4종",
+                    "itemQuantity":2,
+                    "itemPrice":20000
+                     },
+                     {
+                    "itemId":3,
+                    "optionName":"5종",
+                    "itemQuantity":2,
+                    "itemPrice":21800
+                     }]
+                }]
+        
+}
+  
